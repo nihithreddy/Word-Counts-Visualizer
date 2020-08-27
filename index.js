@@ -4,6 +4,7 @@
         window.alert('Please Enter Text in the Text Area')
         return
     }
+    clearTable()
     let words = getWords(text)
     let wordCounts = getWordCounts(words)
     let sortedWordCounts = wordCounts.sort((a,b) => b[1]-a[1])
@@ -14,7 +15,6 @@
 function getWords(text){
     text = text.toLowerCase()
     text = text.replace("[\t\n\r]",' ')
-    console.log(text)
     let chars = text.split('')
     let newText = ''
     for(let ch of chars){
@@ -72,4 +72,12 @@ function generateChart(wordCounts){
             }]
         },
     });
+}
+
+function clearTable(){
+    let rows = $('#wc-table').children('tr')
+    for(let row of rows){
+        row.remove()
+    }
+    
 }
