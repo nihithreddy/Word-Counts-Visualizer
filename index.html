@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counts Visualizer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  </head>
+  <body>
+    <div>
+      <label for="text">Enter your Text Here</label><br /></br />
+      <textarea id="text" rows="25" cols="200" required></textarea><br />
+      <button id="btn" type="submit">Calculate</button><br /><br />
+      <table id="wc-table"></table>
+      <canvas id="wc-chart"></canvas>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
