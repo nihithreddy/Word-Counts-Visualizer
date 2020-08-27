@@ -66,7 +66,6 @@ function generateChart(wordCounts){
             datasets: [{
                 label: 'Word Frequency Chart',
                 borderColor: 'rgb(255, 0, 0)',
-                backgroundColor: 'rgb(255, 99, 132)',
                 borderWidth: 2,
                 data: wordCounts.map((wordCount) => wordCount[1])
             }]
